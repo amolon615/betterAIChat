@@ -11,6 +11,7 @@
 		ACF75928298F09A600696C0B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF75927298F09A600696C0B /* ContentView.swift */; };
 		ACF7592A298F09A700696C0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACF75929298F09A700696C0B /* Assets.xcassets */; };
 		ACF7592D298F09A700696C0B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACF7592C298F09A700696C0B /* Preview Assets.xcassets */; };
+		ACF75936298F0A0600696C0B /* ChatGPTSwift in Frameworks */ = {isa = PBXBuildFile; productRef = ACF75935298F0A0600696C0B /* ChatGPTSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACF75936298F0A0600696C0B /* ChatGPTSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +87,9 @@
 			dependencies = (
 			);
 			name = betterAIChat;
+			packageProductDependencies = (
+				ACF75935298F0A0600696C0B /* ChatGPTSwift */,
+			);
 			productName = betterAIChat;
 			productReference = ACF75922298F09A600696C0B /* betterAIChat.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +118,9 @@
 				Base,
 			);
 			mainGroup = ACF75919298F09A600696C0B;
+			packageReferences = (
+				ACF75934298F0A0600696C0B /* XCRemoteSwiftPackageReference "ChatGPTSwift" */,
+			);
 			productRefGroup = ACF75923298F09A600696C0B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -282,8 +290,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.horovenko.betterAIChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -309,8 +321,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.horovenko.betterAIChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -336,6 +352,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		ACF75934298F0A0600696C0B /* XCRemoteSwiftPackageReference "ChatGPTSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alfianlosari/ChatGPTSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		ACF75935298F0A0600696C0B /* ChatGPTSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ACF75934298F0A0600696C0B /* XCRemoteSwiftPackageReference "ChatGPTSwift" */;
+			productName = ChatGPTSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ACF7591A298F09A600696C0B /* Project object */;
 }
